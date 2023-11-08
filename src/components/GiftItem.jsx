@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 
 export const GiftItem = ({title, urlImg}) => {
   return (
@@ -7,3 +9,10 @@ export const GiftItem = ({title, urlImg}) => {
     </div>
   )
 }
+
+
+GiftItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired
+}
+
